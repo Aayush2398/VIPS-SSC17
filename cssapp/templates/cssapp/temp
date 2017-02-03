@@ -1,0 +1,37 @@
+
+   <!-- Event: Web Designing --> 
+   {% for event in events %}
+
+  <main>
+    <div>
+  <div class="event-bg" 
+  style="background: url(/static/{{event.image_url}});background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple{{forloop.counter}}">
+              <h1>{{event.name}}</h1>
+              <h2>{{event.event_header}}</h2>
+              <br>
+      <a href="#" onclick="simple({{forloop.counter}})"><button class="event-button"></i>VIEW MORE</button></a>
+      <a href="#" onclick="reg(2)"><button class="event-button"></i>REGISTER</button></a>
+
+            </div> 
+
+            <div class="event-bg-detail" id="detail{{forloop.counter}}">
+              <main>
+                <div>
+                  <h1>{{event.name}}</h1>
+                  <h2>{{event.event_details}}</h2>
+                  <a href="#" onclick="detail({{forloop.counter}})"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+{% endfor %}
+   <!-- Event: Web Designing End -->

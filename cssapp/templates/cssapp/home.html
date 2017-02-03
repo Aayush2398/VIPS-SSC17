@@ -1,0 +1,1797 @@
+{% load staticfiles %}
+{% load static %}
+{% load tag_library %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard: State Student Convention 2017, VIPS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="State Student Convention 2017, VIPS">
+  <meta property="og:title" content="State Student Convention 2017, VIPS" />
+  <meta property="og:description" content="State Student Convention 2017, VIPS Theme: Digital India." />
+  <link rel="icon" href="{% static 'css/img/logo.png' %}"> 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" />
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90199770-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+<!-- Top Main -->
+<section class="bg-main">
+  <main>
+    <div class="bg-heading animated fadeIn">
+      <h1 style="text-transform: uppercase;">Hi! {{user.get_full_name}}</h1>
+      <h2>CSI-SSC THEME: DIGITAL INDIA</h2>
+      <br><br>
+      <a href="/logout"><button class="event-button get" id="get"><i class="unlock alternate icon" style="margin-right: 10px;"> </i>LOGOUT</button></a>
+      <button class="event-button evento">EVENTS</button>
+    </div>
+  </main>
+</section>
+<!-- Top Main End -->
+
+<!-- footer -->
+  <h1 class="footer">&copy CSI-SSC 2017 AND DEVELOPED BY ASHISH, DESIGNED BY SRIJIT & GRAPHICS BY ADITYA.</h1>
+<!-- footer end -->
+
+<!-- About -->
+<div class="bg-about" style="overflow-y: scroll;">
+  <main>
+    <div>
+      <h1>ABOUT VIPS</h1>
+      <h2>Vivekananda Institute of Professional Studies (VIPS) was started by Strength India Educational Society in year 2000. VIPS is affiliated to G.G.S.I.P. University, duly recognized by AICTE and has been accredited “A” grade by the National Assessment and Accreditation Council (NAAC) and has also been recognized by UGC under section 2(f) of the UGC Act 1956. Over the years, VIPS has shown a remarkable growth in terms of number of courses offered as well as students intake every year, apart from creating a niche for itself with its all round performance in the University exams. It has been an endeavor at VIPS to constantly provide a better learning atmosphere for students and become a center of excellence. Currently VIPS is running a number of courses including BCA, MCA, B.A.LL.B (Hons.), BBA.LL.B, BJMC, BBA, B. Com(Hons.), LLM and PGDBM. Please visit our website for detailed information: <a href="http://www.vips.edu" style="color:white;" target="_blank">http://www.vips.edu</a></h2>
+      <br><h3>SCROLL</h3>
+    </div>
+  </main>
+
+  <main>
+    <div>
+      <h1>VISION AND MISSION</h1>
+      <h2>Vision: To establish, maintain and promote excellent centers of education for imparting quality professional education comparable with the best in the world.<br><br>
+          Mission: Man Making, Character Building, Nation Building through meaningful education the goal as set out by Swami Vivekananda during his life time.”
+      </h2>
+      <br><br>
+      <button class="event-button evento">EVENTS</button>
+      <h3>SCROLL</h3>
+    </div>
+  </main>
+
+  <main>
+    <div>
+      <h1>CSI-SSC 2017</h1>
+      <h2>Student Convention is meant to be an opportunity for students to develop their skills as researchers and to give them an opportunity to showcase their overall potential. The CSI Students’ Convention (CSI-SSC- 2017) of VIPS, a forum for undergraduate, graduates and post graduate students has the following goals: To give undergraduate, graduate and post graduate students the opportunity to share their research ideas and outcomes in a special forum that provides visibility for their work gain new insights, and understand possible practical applications. To provide detailed feedback to students about their research and presentation, from a panel of distinguished judges from industry and academia. To give students an opportunity to sharpen their communication skills, including visual, organizational, oral, and aural modalities. To recognize and reward outstanding students In year 2014 and 2015 the techno-cultural event Vconnet have been organized by the institute which has more than 25 events including Technical and Cultural events. It was overwhelming to have around 4000 student participation from various Colleges/Universities of Delhi and NCR. The winners for all the events were awarded with cash prizes, gift vouchers and certificates.</h2>
+    </div>
+  </main>
+
+  <main>
+    <div>
+      <h1>EVENT LIST</h1>
+      <h2 style="text-align: center;">
+        IT Quiz<br>
+        Paper Presnetation<br> 
+        Poster Designing<br>
+        Learn-A-Thon<br> 
+        Debate<br>
+        Singing<br>
+        Dancing <br>
+        Dry Cooking<br>
+        Nukkad Natak<br>
+        Best out of Waste<br>
+        App-A-Thon<br>
+        LAN Gaming<br>
+        Web-A-Thon<br>
+        Console Gaming<br>
+        Tug of War
+      </h2>
+    </div>
+  </main>
+</div>
+<!-- About End -->
+
+<!-- Committee -->
+<div class="bg-comm" style="overflow-y: scroll;">
+    <div class="ui container" style="text-align: center;">
+      <div class="ui stackable grid">
+        <div class="ui row" style="text-align: center;float:center;margin-top: 100px;">
+          <div class="ui sixteen wide column">
+                  <h1>Committee</h1><br>
+                  <h4>Chief Patron</h4>
+                  <span class="person">Hon’ble Dr. S.C. Vats</span><br>
+                  <span class="des">Chairman, Vivekananda Institute of Professional Studies (VIPS), Delhi</span>
+
+                  <h4>Patron</h4>
+                  <span class="person">Prof. Supriya Madan</span><br>
+                  <span class="des">Director, School of Information Technology, Vivekananda Institute of Professional Studies (VIPS), Delhi</span>
+
+                  <h4>Convener</h4>
+                  <span class="person">Prof. Vinay Kumar</span><br>
+                  <span class="des">(Scientist E & Technical Director (Retd), NIC, GOI)<br> Professor, School of Information Technology, Vivekananda Institute of Professional Studies (VIPS), Delhi</span>
+
+                  <h4>Co-Convener</h4>
+                  <span class="person">Dr. Deepali Kamthania</span><br>
+                  <span class="des">Associate Professor, School of Information Technology, Vivekananda Institute of Professional Studies (VIPS), Delhi</span>
+
+                  <h4>Advisory Committee</h4>
+                  <span class="person">Sh. Shiv Kumar</span><br>
+                  <span class="des">Chairman CSI, Delhi Chapter</span>
+                  <br><br>
+                  <span class="person">Sh. Pradeep Aneja</span><br>
+                  <span class="des">Vice Chairman cum Chairman elect</span>
+                  <br><br>
+                  <span class="person">Prof J. L. Gupta</span><br>
+                  <span class="des">Executive Director, Vivekananda Institute of Professional Studies (VIPS), Delhi</span>
+                  <br><br>
+                  <span class="person">Dr. Sunil Kumar Muttoo</span><br>
+                  <span class="des">HOD, Dept. Comp. Sc. Delhi University</span>
+
+                  <h4>Programme Committee</h4>
+                  <span class="person">Ms. Shalini Bhartiya</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Sakshi Khullar</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Rashmi Dhruv</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Neha Kohli</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+
+                  <h4>Organizing Committee</h4>
+                  <span class="person">Ms. Indu Sahu</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Meenu Chopra</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Shailee Bhatia</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Anupma Jha</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Tanvi Jain</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+
+                  <h4>Finance Committee</h4>
+                  <span class="person">Dr. M. Bala Subramanian</span><br>
+                  <span class="des">Associate Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Dr. Rajan Gupta</span><br>
+                  <span class="des">Associate Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Mr. Sachin Gupta</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+
+                  <h4>Website Committee</h4>
+                  <span class="person">Ms. Pooja Thakar</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Aastha Bhardwaj</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+
+                  <h4>Publicity Committee</h4>
+                  <span class="person">Dr. Vinay Kumar</span><br>
+                  <span class="des">Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Dr. Deepali Kamthania</span><br>
+                  <span class="des">Associate Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Shalini Bhartiya</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Disha Verma</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Neha Kohli</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+
+                  <h4>Coordination Committee</h4>
+                  <span class="person">Mr. Dheeeraj Malhotra</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Nivedita Palia</span><br>
+                  <span class="des">Assistant Professor, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Mr. Aditya Dhawan</span><br>
+                  <span class="des">Student, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Mr. Sharad Gaur</span><br>
+                  <span class="des">Student, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Mr. Ashish Pahwa,</span><br>
+                  <span class="des">Student, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Sakshi Gajwani</span><br>
+                  <span class="des">Student, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Mr. Advait Mahay</span><br>
+                  <span class="des">Student, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Rashi Bajaj</span><br>
+                  <span class="des">Student, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Ms. Nitasha Bhatia</span><br>
+                  <span class="des">Student, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+
+                  <h4>Technical Committee</h4>
+                  <span class="person">Mr. Upender Chauhan</span><br>
+                  <span class="des">System Administrator, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+                  <br><br>
+                  <span class="person">Mr. Ashok Kumar</span><br>
+                  <span class="des">System Administrator, VSIT, Vivekananda Institute Of Professional Studies, Delhi</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Committee End -->
+
+<!-- Poster -->
+<div class="bg-poster">
+  <main>
+    <div>
+      <a href="{% static 'css/img/poster-main.png' %}" target="_blank"><img src="{% static 'css/img/posters.jpg' %}" class="poster-ssc"></a>
+    </div>
+  </main>
+</div>
+<!-- Poster End -->
+
+<!-- Sponsor -->
+<div class="bg-spon">
+  <main>
+    <div>
+      <h1>SPONSORS</h1>
+      <h2>Call For Sponsors</h2>
+      <br>
+      <img src="{% static 'css/img/csi.png' %}" class="spon-logo">
+      <img src="{% static 'css/img/dominos.png' %}" class="spon-logo">
+      <br><br>
+      <a href="mailto:vipsace@gmail.com" target="_blank"><button class="event-button"></i>SPONSOR US</button></a>
+    </div>
+  </main>
+</div>
+<!-- Sponsor End -->
+
+<!-- Events -->
+<div class="bg-event" style="overflow-y: scroll;">
+
+  <!-- Small Desc -->
+  <main>
+    <div>
+      <h1>EVENTS STARTING IN</h1>
+      <h2 id="countdown"></h2><br>
+      <a href="{% static "css/pdf/main.pdf" %}" target="_blank"><button class="event-button">RULE BOOK</button></a><br>
+      <h3>SCROLL</h3>
+    </div>
+  </main>
+  <!-- Small Desc -->
+
+ <!-- Event: Web Designing --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/web.jpg" %}') center center;background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple1">
+              <h1>WEB-A-THON</h1>
+              <h2>This event is all about unleashing the creative genius in you.</h2>
+              <br>
+              <a href="#" onclick="simple(1)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(1)"><button class="event-button"></i>REGISTER</button></a>
+            </div> 
+
+
+            <div class="event-bg-detail" id="detail1">
+              <main>
+                <div>
+                  <h1>WEB-A-THON</h1>
+                  <h2>This event is all about unleashing the creative genius in you.</h2>
+                  <a href="{% static "css/pdf/web.pdf" %}" target="_blank" onclick="detail(1)"><button class="event-button-black"></i>RULE BOOK</button></a>
+
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule1">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>                    
+                  Team Size: 2 Participants<br><br>
+                  • Round 1 : In this round, participants will go through 20 MCQ questions consisting of HTML, CSS and JS.<br>
+                  • Round 2 : Top 8 teams will develop a website on the given theme using.<br><br>
+                  General Rules<br>
+                  Topics will be given on the spot.
+                  A total of 1.5 hours will be provided for round 2. 
+                  Participants will be provided Sublime Text 3, Notepad++, Photoshop, jQuery lib, Google Chrome.
+                  Decision of judges will be final and binding.
+                  </h2>
+                  <a href="#" onclick="rule(1)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg1">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(1)"><button class="event-button-black"></i>JOIN TEAM : INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(1)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(1)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin1">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Web Designing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+                  <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(1)" class="event-button-black" >JOIN TEAM : INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(1)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg1">
+              <main>
+                <div>
+                
+                  <input type="hidden" class="event-input events" name="event" value="Web Designing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>  
+            <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE(Keep it safe)"></input><br>
+            <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>                   
+              <  
+                  <button onclick="regClose(1)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(1)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Web Designing End -->
+   <!-- Event: TUG OF WAR --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/tug.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple2">
+              <h1>TUG OF WAR</h1>
+              <h2>Jor Laga Ke Haisha</h2>
+              <br>
+              <a href="#" onclick="simple(2)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(2)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail2">
+              <main>
+                <div>
+                  <h1>TUG OF WAR</h1>
+                  <h2>Tug of war teams competition is a pursuit of encourage students to achieve power that they have ever felt of.
+                  The game has to be played on a flat grassy patch of land. A line referred to as a center line is marked on the playing zone and the rope is placed in a manner that its center mark should align the center marked on the ground. On either sides of the rope at the distance of 4 m from the center line, 2 more marks need to be made. This is the point where in the first member of each team will stand.
+                </h2>
+                  <a href="{% static "css/pdf/tug.pdf" %}" target="_blank"  onclick="detail(2  onclick="detail(3)")"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule2">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    
+                    A single team may consist of 06 players maximum<br>
+                    No wrapping the rope around any body part during pull<br>
+                    First team to pull mid-rope marker 6ft. Beyond the middle line is the winner<br>
+                    Swapping of players amongst the team is not permitted<br>
+                    Please wear proper athletic shoes<br>
+                    Direction of pull will be decided by a coin toss<br>
+                    Inappropriate language will not be tolerated and that team will be disqualified
+
+                  </h2>
+                  <a href="#" onclick="rule(2)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg2">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(2)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(2)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(2)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin2">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Tug Of War"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>
+                  <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>                       
+                  <button onclick="regJoinClose(2)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(2)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg2">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Tug Of War"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(2)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(2)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: TUG OF WAR End -->
+
+   <!-- Event: Singing --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/sing.jpg" %}') center center;background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple3">
+              <h1>DHWANIT Musical Fest</h1>
+              <h2>Registrations Open</h2>
+              <br>
+              <a href="#" onclick="simple(3)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(3)"><button class="event-button"></i>REGISTER</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail3">
+              <main>
+                <div>
+                  <h1>DHWANIT Musical Fest</h1>
+                  <h2>Registration Opens </h2>
+                  <a href="{% static "css/pdf/music.pdf" %}" target="_blank"  onclick="detail(3)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule3">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    • Solo Event: Rs.100 <br>
+                    • Group Event: Rs.300<br><br>
+                    All the accompanists/instrumentalists and participants must be of the same college. Cross college teams not allowed. <br>
+                    Instrumentalists to carry their own instruments.<br>
+                    The teams should carry an official letter from their respective institute signed by the competent authority mentioning the names of the participants. <br>
+                    Recorded vocals/music or karaoke will be not allowed.<br>
+                    Drum kit will be provided.<br>
+                    <a href="{% static "css/img/singing.pdf" %}" target="_blank" class="close-xd">VIEW CATEGORIES</a>                    
+                  </h2>
+                  <a href="#" onclick="rule(3)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg3">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(3)"><button class="event-button-black"></i>JOIN AS TEAM</button></a><br>
+                  <a href="#" onclick="regJoinInd(3)"><button class="event-button-black"></i>JOIN AS INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(3)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(3)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin3">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Singing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+                  <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(3)" class="event-button-black" >CONFIRM</button>
+                  <br><br><a href="#" onclick="closeAll(3)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoinInd3">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Singing"></input>
+                  <select class="event-input catg" name="catg"><option>Categories</option><option>Indian Vocal Solo</option><option>Western Vocal Solo</option><option>Instrumental Solo</option></select> <br>
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+                  <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinIndClose(3)" class="event-button-black" >CONFIRM</button>
+                  <br><br><a href="#" onclick="closeAll(3)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg3">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Singing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <select class="event-input catg" name="catg"><option>Categories</option><option>Indian Vocal Solo</option><option>Western Vocal Solo</option><option>Instrumental Solo</option><option>Group Musical</option></select><br>
+                  <button onclick="regClose(3)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(3)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Singing End -->
+
+   <!-- Event: Switch And Code --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/code.jpg" %}') right center;background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple4">
+              <h1>LEARN-A-THON (Coding)</h1>
+              <h2>To change the world all we need to do is tweak the source code.</h2>
+              <br>
+              <a href="#" onclick="simple(4)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(4)"><button class="event-button"></i>REGISTER</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail4">
+              <main>
+                <div>
+                  <h1>LEARN-A-THON (Coding)</h1>
+                  <h2>   
+                    In this event, the ability of participants to implement innovative algorithms and make use of data structures in the best possible manner will be tested in programming language of their choice.
+                  </h2>
+                  <a href="{% static "css/pdf/programming.pdf" %}" target="_blank" onclick="detail(4)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule4">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>TEAM SIZE: 1-4<br><br>
+                  • Topics will be given on the spot.<br>
+                  • A total of 2 hours will be provided for the second half. <br>
+                  • Participants will be provided Sublime Text 3 & Visual Studio Code. <br>
+                 • Decision of judges will be final and binding.<br>
+                  </h2>
+                  <a href="#" onclick="rule(4)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg4">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(4)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(4)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(4)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin4">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="LEARN-A-THON"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(4)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(4)" class="close-xd">CLOSE</a>
+                  
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg4">
+              <main>
+                <div>
+                  <div> 
+                  <input type="hidden" class="event-input events" name="event" value="LEARN-A-THON"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(4)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(4)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Switch And Code End -->
+
+   <!-- Event: Quizzing --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/quiz.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple5">
+              <h1>Quizzing</h1>
+              <h2>Mind Speeds Like Light</h2>
+              <br>
+              <a href="#" onclick="simple(5)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(5)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail5">
+              <main>
+                <div>
+                  <h1>Quizzing</h1>
+                  <h2>
+                    
+                    Quiz team competition is a pursuit of trivial Knowledge, encourage students to achieve academic excellence and Increase their awareness of the world around them. It actually tests student’s retention and accumulation of knowledge in a real life situation. Encourage independent study and academic excellence. Recognize and appreciate non-traditional values for competition. Build self-esteem and pride. Do you think you have challenging knowledge of IT, then BRING UP YOUR TEAM AND CHALLENGE YOUR KNOWLEDGE
+
+                  </h2>
+                  <a href="{% static "css/pdf/it.pdf" %}" target="_blank" onclick="detail(5)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule5">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    Team Size: 2<br><br>
+                    • Total questions: 40. Quiz is divided into 2 levels:<br>
+                    • Prelims: 20 Questions. (+1 for correct answer, no negatives). Carry forward of prelim scores to the finals in order to ensure no ties.<br>
+                    • Top 6 scorers move to the finals.<br>
+                    • Finals: 20 questions in bounce & pounce manner.
+                    +10 points on bounce for correct answer.
+                    +10/-10 points on pounce for correct/ wrong answer.<br>
+
+                    • Bounce and Pounce format will be explained before the quiz starts.                  
+                  </h2>
+                  <a href="#" onclick="rule(5)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg5">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(5)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(5)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(5)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin5">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Quizzing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(5)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(5)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg5">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Quizzing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(5)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(5)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Quizzing End -->
+
+   <!-- Event: Poster Designing --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/poster.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple6">
+              <h1>Poster Designing</h1>
+              <h2> Do you have that digital artist in you?</h2>
+              <br>
+              <a href="#" onclick="simple(6)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(6)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail6">
+              <main>
+                <div>
+                  <h1>Poster Designing</h1>
+                  <h2>A poster is just not a standard research paper stuck to a board. An effective poster uses a different, visual grammar. It shows, not tell. It expresses your points in graphical terms. So let your creativity out and express it.
+                </h2>
+                  <a href="{% static "css/pdf/poster.pdf" %}" target="_blank" onclick="detail(6)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule6">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    Topics will be given on the spot.<br>
+                    A total of 1.5 hours will be provided.<br>
+                    Software’s Provided - Adobe Photoshop, Adobe Illustrator<br>
+                    Use of internet is prohibited. Raw files and fonts will be provided.<br> 
+                    Decision of judges will be final and binding.
+
+                  </h2>
+                  <a href="#" onclick="rule(6)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg6">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(6)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(6)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(6)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin6">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Poster Designing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(6)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(6)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg6">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Poster Designing"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(6)" class="event-button-black" >CREATE TEAM</button> 
+                  <br><br><a href="#" onclick="closeAll(6)" class="close-xd">CLOSE</a>         
+             </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Poster Designing End -->
+
+   <!-- Event: Paper Presentation --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/paper.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple7">
+              <h1>Paper Presentation</h1>
+              <h2>Let your mind Write</h2>
+              <br>
+              <a href="#" onclick="simple(7)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(7)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail7">
+              <main>
+                <div>
+                  <h1>Paper Presentation</h1>
+                  <h2>
+                    
+                      Student's Paper / Project presentation Competition that describes recently completed or on-going student's research in any one of the topics: Digital World, High Performance Computing, Changing Architectural and Programming Paradigm, Artificial Intelligence,  Biomedical Instrumentation, Digital signal and image processing, Embedded Systems, Fuzzy Logic & Neural Networks, Mobile & Wireless
+                      and Programming Paradigm, Artificial Intelligence,  Biomedical Instrumentation, Digital signal and image processing, Embedded Systems, Fuzzy Logic & Neural Networks, Mobile & Wireless IT. 
+                  </h2>
+                  <a href="{% static "css/pdf/paper.pdf" %}" target="_blank" onclick="detail(7)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule7">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    Max Team Size: 3<br>
+                    Registration Fees (UG/PG): INR 250/- (Non CSI Member) & INR 175/- (CSI Member)<br>
+                    Registration  of at least one author per paper is mandatory<br>
+                    Only registered participants will get the certificate and kit.<br>
+                    A participant can submit more than one paper.<br>
+                    Last date for full paper submission is 17th January, 2017 and paper acceptance notification is 19th January, 2017.<br>
+
+                    The decision by the judges will be final<br><br>
+                    <a href="{% static "css/img/paper.pdf" %}" target="_blank" class="close-xd">VIEW FORMAT</a>
+                  </h2>
+                  <a href="#" onclick="rule(7)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg7">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(7)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(7)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(7)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin7">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Paper Presentation"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(7)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(7)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg7">
+              <main>
+                <div> 
+                <input type="hidden" class="event-input events" name="event" value="Paper Presentation"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(7)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(7)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Paper Presentation End -->
+
+   <!-- Event: Nukad Natak --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/drama.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple8">
+              <h1>Nukad Natak</h1>
+              <h2>Ye Duniya Rangmanch ka khel hai, Kabhi kirdaar to kabhi bhavnao ka mail hai</h2>
+              <br>
+              <a href="#" onclick="simple(8)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(8)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail8">
+              <main>
+                <div>
+                  <h1>Nukad Natak</h1>
+                  <h2>
+                    
+                    However small a part you're offered, never consider it beneath your dignity to accept it. As an artist your aim should be to make the most of your opportunity, and squeeze the last drop of meaning out of your lines. Each word spoken in a play is like a fruit in a tree. Not everyone in the audience can reach it. But you, the actor, must know how to pluck it, get at it's essence, and serve it up to the audience for their edification!!
+
+
+                  </h2>
+                  <a href="{% static "css/pdf/nukkad.pdf" %}" target="_blank" onclick="detail(8)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule8">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    Max Team Size: 15<br>
+                    Time limit: 15-20 minutes. Negative marks for exceeding time limit.<br>
+                    Participants should bring their own props.<br>
+                    Mikes are not allowed.<br>
+                    Teams can use their posters and banners.<br>
+                    Music Instruments are allowed.<br>
+                    Word of Judge/event coordinator shall be final and abiding.<br>
+                  </h2>
+                  <a href="#" onclick="rule(8)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg8">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(8)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(8)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(8)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin8">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Nukad Natak"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual,Leave it.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(8)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(8)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg8">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Nukad Natak"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(8)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(8)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Nukad Natak End -->
+
+   <!-- Event: Lan Gaming --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/cs.jpg" %}') center center;background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple9">
+              <h1>Lan Gaming</h1>
+              <h2>Easy peasy lemon squeezy!</h2>
+              <br>
+              <a href="#" onclick="simple(9)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(9)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail9">
+              <main>
+                <div>
+                  <h1>Lan Gaming</h1>
+                  <h2>It’s no secret–the number one way to put butts in your seats and show off your fantastic Counter Strike skills to beat the other teams off.</h2>
+                  <a href="{% static "css/pdf/lan.pdf" %}" target="_blank" onclick="detail(9)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule9">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    Team Size: 5 member <br>
+                    Entry Fee: Rs.200 (for 5 member team)<br><br>
+                    • Map Pool: de_dust2, de_nuke, de_inferno, de_train<br>
+                    • No unfair means are allowed like cheat codes, trainers, pen drives etc or otherwise you will will lead to disqualification of the team.<br>
+                    • Misbehavior with the coordinators will not be tolerated & guilty persons will be disqualified.<br>
+                    • In case of any dispute the coordinators’ decision will be final.<br>
+                    • Participants are allowed to bring their mouse pad, mouse and headphones.
+                  </h2>
+                  <a href="#" onclick="rule(9)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg9">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(9)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(9)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(9)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin9">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Lan Gaming"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual,Leave it.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(9)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(9)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg9">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Lan Gaming"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(9)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(9)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+ 
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Lan Gaming End -->
+
+   <!-- Event: Creation From E-Waste --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/waste.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple10">
+              <h1>Best Out Of Waste</h1>
+              <h2>DON'T USE AND THROW DON'T BREAK THE CRACK YOU ALWAYS HAVE SOME IDEA  TO CREATE "BEST OUT OF WASTE</h2>
+              <br>
+              <a href="#" onclick="simple(10)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(10)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail10">
+              <main>
+                <div>
+                  <h1>Best Out Of Waste</h1>
+                  <h2>If you think opportunity when you think of waste, then you are a perfect contender for this event. Using your own materials, the participant is expected to make a value added commodity that may have some practical use. Bring out the genius within and look hard before you decide to discard the diamond in the rock</h2>
+                  <a href="{% static "css/pdf/best.pdf" %}" target="_blank" onclick="detail(10)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule10">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    A team can consist of up to 3 people, not necessarily from the same college.<br>
+                    No participant can be a part of more than 1 team.<br>
+                    Stationary Things Like Fevicol, Scissors, Stapler, Tape etc is allowed<br>
+                    The decision by the judges will be final<br>
+                    Use of hazardous chemicals and tools are not allowed.<br>
+                    Bring your own relevant material.<br>
+                    Rest of the rules will be instructed on the spot<br>
+                    Max Team Size : 3
+ 
+
+                  </h2>
+                  <a href="#" onclick="rule(10)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg10">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(10)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(10)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(10)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin10">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Best out of Waste"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(10)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(10)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg10">
+              <main>
+                <div> 
+                <input type="hidden" class="event-input events" name="event" value="Best out of Waste"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(10)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(10)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Creation From E-Waste End -->
+
+   <!-- Event: Dancing --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/dance.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple11">
+              <h1>Dance</h1>
+              <h2>There are many shortcuts to Happiness, and Dancing is one of them.</h2>
+              <br>
+              <a href="#" onclick="simple(11)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(11)"><button class="event-button"></i>REGISTER</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail11">
+              <main>
+                <div>
+                  <h1>Dance</h1>
+                  <h2> All the teams will be judged on the following aspects All the Team Members should be decently dressed. There should be no obscene content. All the teams are requested not to exceed the time limit that is 3 minutes, if exceeded marks will be deducted. Song selection should be decent. Decision made by the judges will be final. </h2>
+                  <a href="{% static "css/pdf/dance.pdf" %}" target="_blank" onclick="detail(11)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule11">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                  Maximum Team Size: 10 Participants (Individual is also allowed)<br><br>
+                  • All the team members should be decently dressed.<br>
+                  •Maximum time limit is 3 minutes, Marks will be deducted if exceeded.<br>
+                 • Each team is requested to kindly submit their song before 18th January.<br>
+                 • There should be no obscene content in the performance (dance/music).<br>
+                 • Decision made by the judges will be final.<br>
+		 * Solo : Rs.100 / Group : Rs.250
+                  </h2>
+                  <a href="#" onclick="rule(11)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg11">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(11)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(11)"><button class="event-button-black"></i>CREATE A TEAM</button></a><br>
+                  <br><br><a href="#" onclick="closeAll(11)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin11">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="DANCE"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual,Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(11)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(11)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+<!--             <div class="event-bg-detail" id="regSong11">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="DANCE"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br> 
+                  <input type="text" class="event-input songname"  name="songname" placeholder="SONG NAME"></input><br>                     
+                  <button onclick="regSongClose(11)" class="event-button-black" >EDIT SONG</button>
+                  <br><br><a href="#" onclick="closeAll(11)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div> -->
+
+            <div class="event-bg-detail" id="reg11">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="DANCE"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails"  name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(11)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(11)" class="close-xd">CLOSE</a>
+                  
+                </div>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Dancing End -->
+
+   <!-- Event: Dry Cooking --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/cook.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple12">
+              <h1>Dry Cooking</h1>
+              <h2>A recipe is a story that ends with a good meal
+</h2>
+              <br>
+              <a href="#" onclick="simple(12)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(12)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail12">
+              <main>
+                <div>
+                  <h1>Dry Cooking</h1>
+                  <h2>An event in which each team will prepare a dish/dishes, desert, salad etc. without using inflammable products.
+</h2>
+                  <a href="{% static "css/pdf/dry.pdf" %}" target="_blank" onclick="detail(12)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule12">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    Max Team Size: 2<br><br>
+                    • Judging Criteria:taste,  
+                    technique, presentation and time<br>
+                    • Cannot make liquid or curry
+                    type of dish<br>
+                    • Proper kitchen dressup required.<br>
+                    • Time limit 70 mins.<br>           
+                    • No Electricity will be provided to teams.<br>
+                    • Participants have to bring their own material<br>
+                    •Only vegetarian dishes         
+                  </h2>
+                  <a href="#" onclick="rule(12)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg12">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(12)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(12)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(12)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin12">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Dry Cooking"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(12)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(12)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg12">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Dry Cooking"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(12)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(12)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Dry Cooking End -->
+
+   <!-- Event: Debate --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/debate.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple13">
+              <h1>HUM AND HAW - DEBATE</h1>
+              <h2>World is just another machinery, a clockwork of events based on precise facts and calculations.It's your time to prove the former statement or negate it!</h2>
+              <br>
+              <a href="#" onclick="simple(13)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(13)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail13">
+              <main>
+                <div>
+                  <h1>HUM AND HAW - DEBATE</h1>
+                  <h2>World is just another machinery, a clockwork of events based on precise facts and calculations or is it? This is your time to prove the former statement or negate it! </h2>
+                  <a href="{% static "css/pdf/debate.pdf" %}" target="_blank" onclick="detail(13)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule13">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>Maximum Participants: 3 Speakers.<br> <br>
+                      • Each speaker has to speak for minimum 1 min.<br> 
+                      • The affirmative must advocate everything required by the topic itself. No revision of position of a team is permitted during the debate. 
+                      He who asserts must prove. <br>
+                      • Visual assistance is not allowed.<br>
+                      • Each speaker is questioned as soon as he concludes his speech. The witness must 
+                      answer the questions without consulting his colleagues.<br>
+                      • The questioner must confine himself to questions and not make statements, comments.<br>
+                      • Any gains made outside of the established procedure are disallowed.</h2>
+                  <a href="#" onclick="rule(13)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg13">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(13)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(13)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(13)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin13">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Debate"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(13)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(13)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg13">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Debate"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(13)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(13)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Debate End -->
+
+
+   <!-- Event: Android Development --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/and.jpg" %}') right center;background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple14">
+              <h1>APP-A-THON</h1>
+              <h2>Be smart and change India digitally.</h2>
+              <br>
+              <a href="#" onclick="simple(14)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(14)"><button class="event-button"></i>REGISTER TEAM</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail14">
+              <main>
+                <div>
+                  <h1>APP-A-THON</h1>
+                <h2>All the teams will develop an application on the given theme using any technology and language.</h2>
+                  <a href="{% static "css/pdf/app.pdf" %}" target="_blank" onclick="detail(14)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule14">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    Team Size: 4 Participants(Max)<br><br>
+                    • Topics will be released one day before the event .<br>
+                    • A total of 5 hours will be provided for developing app.<br>
+                    • There will also be a surprise problem statement on the event day<br><br>
+
+
+                    Decision of judges will be final and binding.<br>
+                    All the participants have to bring their own laptops and chargers.                    
+                  </h2>
+                  <a href="#" onclick="rule(14)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg14">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(14)"><button class="event-button-black"></i>JOIN TEAM / INDIVIDUAL</button></a><br>
+                  <a href="#" onclick="reg(14)"><button class="event-button-black"></i>CREATE A TEAM</button></a>
+                  <br><br><a href="#" onclick="closeAll(14)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin14">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="APPATHON"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM CODE(If Individual, Leave It.)"></input><br>  
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(14)" class="event-button-black" >JOIN TEAM / INDIVIDUAL</button>
+                  <br><br><a href="#" onclick="closeAll(14)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg14">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="APPATHON"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <input type="text" class="event-input emails" name="email" placeholder="VALID EMAIL ID"></input><br>
+                  <button onclick="regClose(14)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(14)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Android Development End -->
+
+
+   <!-- Event: Console --> 
+  <main>
+    <div>
+      <div class="event-bg" style="background: url('{% static "css/img/console.jpg" %}');background-size: cover;">
+        <main>
+          <div>
+
+            <div class="event-bg-simple" id="simple15">
+              <h1>Console Gaming</h1>
+              <h2>A portal to Adrenaline Rush, presented by none other than SSI.</h2>
+              <br>
+              <a href="#" onclick="simple(15)"><button class="event-button"></i>VIEW MORE</button></a>
+              <a href="#" onclick="regCheck(15)"><button class="event-button"></i>REGISTER</button></a>
+            </div> 
+
+            <div class="event-bg-detail" id="detail15">
+              <main>
+                <div>
+                  <h1>Console Gaming</h1>
+                  <h2>A portal to Adrenaline Rush, presented by none other than SSI. </h2>
+                  <a href="{% static "css/pdf/console.pdf" %}" target="_blank" onclick="detail(15)"><button class="event-button-black"></i>RULE BOOK</button></a>
+                </div>
+              </main>
+            </div>
+            
+            <div class="event-bg-detail" id="rule15">
+              <main>
+                <div>
+                  <h1>RULE BOOK</h1>
+                  <h2>
+                    • Third party communication is not allowed for this tournament and no custom formation to be used.<br>   
+                    • Formation can't be changed during the game play.<br>
+                    • No one can choose custom teams.<br>
+                    • 5 Min of play game.<br>               
+                    • The game will go to golden goal and penalties will be sudden death If the score is equal. And decision final to coordinators. <br>
+                    • All teams/players have a 15 minute grace period from the match scheduled time to show up and play their match.<br>
+                    • No warm-up or practice Games are permitted once the game has begun.  
+                  </h2>
+                  <a href="#" onclick="rule(15)"><button class="event-button-black"></i>CLOSE</button></a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="checkReg15">
+              <main>
+                <div>
+                  <a href="#" onclick="regJoin(15)"><button class="event-button-black"></i>REGISTER</button></a><br>
+                  
+                  <br><br><a href="#" onclick="closeAll(15)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="regJoin15">
+              <main>
+                <div>
+                  
+                  <input type="hidden" class="event-input events" name="event" value="Console Gaming"></input> 
+                  <input type="text" class="event-input emails" name="email" placeholder="EMAIL"></input><br>
+                  <input type="text" class="event-input college-check colleges" name="college" placeholder="COLLEGE"></input><br>
+                  <input type="text" class="event-input contact-check contacts" maxlength="11" name="contact" placeholder="CONTACT"></input><br>
+      <input type="text" class="event-input courses" name="course" placeholder="COURSE"></input><br>
+                  <input type="text" class="event-input year-check years" maxlength="1" name="year" placeholder="COLLEGE YEAR"></input><br>                       
+                  <button onclick="regJoinClose(15)" class="event-button-black" >CONFIRM</button>
+                  <br><br><a href="#" onclick="closeAll(15)" class="close-xd">CLOSE</a>
+                </div>
+              </main>
+            </div>
+
+            <div class="event-bg-detail" id="reg15">
+              <main>
+                <div> 
+                  <input type="hidden" class="event-input events" name="event" value="Console Gaming"></input>
+                  <input type="text" class="event-input teams" name="team" placeholder="TEAM NAME"></input><br>
+                  <input type="text" class="event-input codes" name="code" placeholder="TEAM CODE"></input><br>
+                  <button onclick="regClose(15)" class="event-button-black" >CREATE TEAM</button>
+                  <br><br><a href="#" onclick="closeAll(15)" class="close-xd">CLOSE</a>
+              </main>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>    
+   <!-- Event: Console End -->
+
+</div>
+<!-- Events End -->
+
+<!-- Contact -->
+<div class="bg-contact">
+  <main>
+    <div>
+      <h1>CONTACT US</h1>
+      <h2>VIVEKANANDA INSTITUTE OF PROFESSIONAL STUDIES <br>AU BLOCK PITAMPURA, NEW DELHI<br><br>vips.ace@gmail.com<br>Aditya Dhawan: +91-9899550949, Ashish Pahwa: +91-9599547095, Sharad Gaur: +91-9873731413, Sakshi Gajwani: +91-8826370762, Advait Mahay: +91-9818020829, Naman Punia: +91-8826687155, Rashi Bajaj: +91-8826386269, Nitasha Bhatia: +91-9873832688.</h2><br>
+      <a href="https://www.facebook.com/vipsace" target="_blank"><h3><i class="facebook icon"></i></h3></a>
+      <a href="https://www.vipsace.org" target="_blank"><h3><i class="globe icon"></i></h3></a>
+    </div>
+  </main>
+</div>
+<!-- Contact End -->
+
+<!-- Map -->
+<div class="bg-map">
+    <main>
+      <div>
+        <h1>MAP</h1>
+        <h2>VIVEKANANDA INSTITUTE OF PROFESSIONAL STUDIES <br>AU BLOCK PITAMPURA, NEW DELHI</h2>
+        <br><br>
+        <a href="https://goo.gl/maps/ETSMFEWTkEN2" target="_blank"><button class="event-button"><i class="send icon" style="margin-right: 10px;"> </i>GET DIRECTION</button></a>
+      </div>
+    </main>
+</div>
+<!-- Maps End -->
+
+<!-- Nav -->
+<ul class="nav animated slideInRight">
+    <li class="sec active home" id="home">
+        <a href="#home"><span class="line"></span><span class="ac_line"></span><span class="text">HOME</span></a>
+    </li>
+    <li class="sec about" id="about">
+        <a href="#about"><span class="line"></span><span class="ac_line"></span><span class="text">ABOUT US</span></a>
+    </li>
+    <li class="sec comm" id="comm">
+        <a href="#comm"><span class="line"></span><span class="ac_line"></span><span class="text">COMMITTEE</span></a>
+    </li>
+    <li class="sec poster" id="poster">
+        <a href="#poster"><span class="line"></span><span class="ac_line"></span><span class="text">POSTER</span></a>
+    </li>
+    <li class="sec spon" id="spon">
+        <a href="#spon"><span class="line"></span><span class="ac_line"></span><span class="text">SPONSORS</span></a>
+    </li>
+    <li class="sec event evento">
+        <a href="#event"><span class="line"></span><span class="ac_line"></span><span class="text">EVENTS</span></a>
+    </li>
+    <li class="sec contact" id="contact">
+        <a href="#contact"><span class="line"></span><span class="ac_line"></span><span class="text">CONTACT US</span></a>
+    </li>
+    <li class="sec map" id="map">
+        <a href="#map"><span class="line"></span><span class="ac_line"></span><span class="text">MAP</span></a>
+    </li>
+</ul>
+<!-- Nav End -->
+
+<!-- Nav for mobile -->
+<div class="nav-mob">
+  <main>
+    <div>
+      <h1 class="home nav-back">HOME</h1>
+      <h1 class="about nav-back">ABOUT US</h1>
+      <h1 class="comm nav-back">COMMITTEE</h1>
+      <h1 class="poster nav-back">POSTER</h1>
+      <h1 class="spon nav-back">SPONSORS</h1>
+      <h1 class="evento nav-back">EVENTS</h1>
+      <h1 class="contact nav-back">CONTACT US</h1>
+      <h1 class="map nav-back">MAP</h1>
+    </div>
+  </main>
+</div>
+<div id="nav-icon">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<!-- Nav for mobile end -->
+
+<!-- Social -->
+<a href="https://www.facebook.com/vipsace" target="_blank"><h2 class="facebookLg animated fadeIn"><i class="facebook icon"></i></h2></a>
+<a href="https://www.vipsace.org" target="_blank"><h2 class="whatsappLg animated fadeIn"><i class="globe icon"></i></h2></a>
+<!-- Social End -->
+
+<!-- Logos -->
+<img src="{% static 'css/img/logo.png' %}" class="logo  animated slideInDown">
+<img src="{% static 'css/img/di.png' %}" class="logo-di  animated slideInDown">
+<!-- Logos End -->
+
+<!-- Intro xD -->
+<div class="intro">
+<main>
+  <div>
+    <h1 data-content="SSC'2017" class="intro-anim">SSC'2017</h1><br>
+    <h1 data-content="21'JANUARY'2017" class="intro-anim-2">21'JANUARY'2017</h1>
+  </div>
+</main>
+</div>
+<!-- Intro xD End -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+<script type="text/javascript" src="{% static "css/js/main.js" %}"></script>
+</body>
+</html>

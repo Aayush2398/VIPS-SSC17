@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300');
+@font-face {
+    font-family: simplifica;
+    src: url(../font/simplifica.ttf);
+}
+
+body {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow-x: hidden;
+  background: white;
+}
+
+html, body {
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+a, a:hover, a:focus, a:clicked {
+  color: #fff;
+}
+
+.section {
+  width:100%;
+  height: 100%;
+}
+
+.center-area {
+  position: absolute;
+  height: 750px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+
+
+.center-area:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: none;
+}
+
+main div {
+  color: white;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  overflow: none;
+}
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bg-main {
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  background: url('../img/bg.png') center center no-repeat;
+  background-size: cover;
+/*  animation: bg-main-anim 12s infinite;*/
+}
+
+.map_canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-about, .bg-contact, .bg-get, .bg-map, .bg-event, .bg-spon {
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  background: black;
+  display: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+.bg-get  {
+  background: url('../img/get.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.bg-map  {
+  background: url('../img/maps.png') center center no-repeat;
+  background-size: cover;
+}
+
+.bg-contact  {
+  background: url('../img/contact.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+@keyframes bg-main-anim {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 110% auto; }
+  100% { background-size: 100% auto; }
+}
+
+.logo {
+  font-family: simplifica;
+  font-weight: 500;
+  font-size: 25px;
+  position: fixed;
+  top:0px;
+  display: none;
+  letter-spacing: 3px;
+  left:20px;
+}
+
+.bg-heading h1, .bg-about h1, .bg-contact h1, .bg-get h1, .bg-map h1, .bg-event h1, .bg-spon h1 {
+  font-family: simplifica;
+  font-weight: 100;
+  font-size: 110px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.bg-about h2, .bg-contact h2, .bg-get h2, .bg-map h2, .bg-event h2, .bg-spon h2  {
+  font-family: 'Nunito Sans';
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  float: center;
+  letter-spacing: 4px;
+  display: inline-block;
+  width:700px;
+}
+
+.spon-logo {
+  width:120px;
+}
+
+.bg-event h3 {
+  font-family: 'Nunito Sans';
+  font-size: 15px;
+  letter-spacing: 10px;
+}
+
+.bg-contact h3 {
+    color:white;
+    display: inline-block;
+}
+
+.bg-contact h3 i {
+    padding: 10px 35px;
+}
+
+.bg-contact h2 {
+  width: 800px;
+}
+
+.bg-about h1, .bg-contact h1, .bg-get h1, .bg-map h1, .bg-event h1, .bg-spon h1 {
+  font-size: 70px;
+}
+
+.bg-heading h2 {
+  font-family: simplifica;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 12px;
+  margin-top: -25px;
+}
+
+.intro-anim {
+  font-family: simplifica;
+  font-weight: 100;
+  font-size: 100px;
+  color: hsla(0,0%,100%,.3);
+  letter-spacing: 3px;
+  display: inline-block;
+}
+
+.intro-anim-2 {
+  font-family: simplifica;
+  font-weight: 100;
+  font-size: 30px;
+  color: hsla(0,0%,100%,.3);
+  letter-spacing: 6px;
+  display: inline-block;
+  margin-top: -40px;
+}
+
+@keyframes intro-load {
+  from { max-width: 0em; }
+}
+
+h1:before {
+  content: attr(data-content);
+  position: absolute;
+  overflow: hidden;
+  max-width: 10em;
+  display: inline-block;
+  color: white;
+  animation: intro-load 10s linear;
+}
+
+.event-button {
+    font-family: 'Nunito Sans';
+    width: 250px;
+    background: transparent;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid white;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    color: white;
+    height: 47px;
+    font-weight: 600;
+    line-height: 48px;
+    cursor: pointer;
+    -moz-transition:all 0.7s ease;
+    -webkit-transition:all 0.7s ease;
+    transition:all 0.7s ease;
+    letter-spacing: 3px;
+}
+
+.event-input {
+    font-family: 'Nunito Sans';
+    width: 250px;
+    background: transparent;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+    height: 47px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 3px;
+}
+
+
+.event-button:hover {
+    background-position:left bottom;
+    border:1px solid white;
+    font-weight: 600;
+    color:black;
+}
+
+.event-button-black {
+    font-family: 'Nunito Sans';
+    width: 250px;
+    background: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid black;
+    background: linear-gradient(to left, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    color: white;
+    height: 47px;
+    font-weight: 600;
+    line-height: 48px;
+    cursor: pointer;
+    -moz-transition:all 0.7s ease;
+    -webkit-transition:all 0.7s ease;
+    transition:all 0.7s ease;
+    letter-spacing: 3px;  
+}
+
+.event-button-black:hover {
+    background-position:left bottom;
+    border:1px solid black;
+    font-weight: 600;
+    color:black;
+}
+
+.intro {
+    background: black;
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+
+.facebookLg {
+    color:white;
+    position: fixed;
+    bottom:160px;
+    left:20px;
+}
+
+.whatsappLg {
+    color:white;
+    position: fixed;
+    bottom:100px;
+    left:20px;
+}
+
+.twitterLg {
+    color:white;
+    position: fixed;
+    bottom:40px;
+    left:20px;
+}
+
+.logo-di {
+  width: 120px;
+  position: fixed;
+  top:20px;
+  display: none;
+  right:20px;
+}
+
+ul, li {
+    list-style-type:none;
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    bottom: 30px;
+    display: none;
+}
+
+.nav .sec {
+    margin: 5px 0;
+}
+
+.nav a {
+    position: relative;
+    display: block;
+    height: 11px;
+    width: 80px;
+}
+
+.nav .active .line {
+    left: 80px;
+    width: 0px;
+}
+
+.nav .active.sec .ac_line {
+    width: 80px;
+    opacity: 1;
+    background: white;
+}
+
+.nav .active.sec .text {
+    opacity: 1;
+    color: white;
+    right: 100px;
+}
+
+.nav .ac_line {
+    -webkit-transition: all .4s ease-in-out .2s;
+    transition: all .4s ease-in-out .2s;
+}
+.nav .ac_line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    opacity: 0;
+}
+
+.nav .text {
+    position: absolute;
+    right: 98px;
+    top: 0;
+    font-size: 11px;
+    font-family: 'Nunito Sans';
+    line-height: 11px;
+    opacity: 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color:white;
+    white-space: nowrap;
+    -moz-transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+
+.nav .line {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.nav .line {
+    position: absolute;
+    right: 42px;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    -moz-transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+
+li.sec:hover .line {
+    background-position:right bottom;    
+}
+
+li.sec:hover .text {
+    opacity: 1;
+    -moz-transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+
+.event-bg {
+    width:800px;
+    height: 450px;
+}
+
+.event-bg h1, .event-bg-detail h1 {
+  font-family: simplifica;
+  font-weight: 100;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.event-bg h2, .event-bg-detail h2 {
+  font-family: 'Nunito Sans';
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  float: center;
+  margin-top: -20px;
+  letter-spacing: 4px;
+  display: inline-block;
+  width:400px;
+}
+
+.event-bg-detail h2{
+  width: 650px;
+  color: black;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.event-bg-detail h1 {
+  color:black;
+}
+
+.event-bg-detail {
+  width: 800px; 
+  height: 450px; 
+  background: white;
+  display: none;
+}
+
+@media screen and (max-width:900px)
+{
+    .bg-heading h1 {
+      font-size: 60px;
+    }
+
+    .bg-heading h2 {
+      font-size: 20px;
+    }
+    .event-button {
+      width:160px;
+    }
+    .facebookLg, .twitterLg, .whatsappLg {
+      display: none;
+    }
+    .bg-about h2, .bg-contact h2, .bg-get h2, .bg-map h2, .bg-event h2, .bg-spon h2 {
+      width: 95%;
+      font-size: 13px;
+      margin-top: -3px;
+    }
+    .bg-about h1, .bg-contact h1, .bg-get h1, .bg-map h1, .bg-event h1, .bg-spon h1 {
+      font-size: 50px;
+    }
+    .nav {
+      bottom: 0px;
+    }
+    .bg-about .event-button, .bg-map .event-button, .bg-spon .event-button {
+      width:70%;
+    }
+    .bg-event h3 {
+      font-size: 10px;
+      letter-spacing: 8px;
+    }
+    .event-bg, .event-bg-detail {
+      width: 600px;
+      height:400px;
+    }
+    .event-bg .event-button, .event-button-black, .event-input {
+      width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .event-bg, .event-bg-detail {
+      width: 300px;
+      height:500px;
+    }
+    .event-bg .event-button, .event-button-black, .event-input {
+      width:100%;
+    }
+    .event-bg h1{
+      font-size: 35px;
+    }
+    .event-bg h2  {
+      font-size: 15px;
+      width: 100%;
+    }
+    .event-bg-detail h1 {
+      font-size: 25px;
+    }
+    .event-bg-detail h2 {
+      font-size: 10px;
+      width: 100%;
+    }
+    .intro-anim {
+      font-size: 80px;
+    }
+    .bg-heading h1 {
+      font-size: 45px;
+      line-height: 1;
+    }
+    .bg-heading h2 {
+      margin-top: 0px;     
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .bg-heading h1 {
+      font-size: 35px;
+      line-height: 1;
+    }
+    .bg-heading h2 {
+      margin-top: 0px;     
+    }  
+    .intro-anim {
+      font-size: 70px;
+    }
+    .bg-about h2, .bg-contact h2, .bg-get h2, .bg-map h2, .bg-event h2, .bg-spon h2 {
+      font-size:10px;
+    }
+    .bg-about h1, .bg-contact h1, .bg-get h1, .bg-map h1, .bg-event h1, .bg-spon h1 {
+      font-size:35px;
+    }
+}

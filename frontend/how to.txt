@@ -1,0 +1,26 @@
+upload main.css and main.js to herokuapp
+
+and for sponsors -
+
+1. add the following code in both home.html and index.html (add them in between about section and event section)
+
+<!-- Sponsor -->
+<div class="bg-spon">
+  <main>
+    <div>
+      <h1>SPONSORS</h1>
+      <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h2>
+      <br>
+      <img src="img/csi.png" class="spon-logo">
+      <br><br>
+      <a href="mailto:vipsace@gmail.com" target="_blank"><button class="event-button"></i>SPONSOR US</button></a>
+    </div>
+  </main>
+</div>
+<!-- Sponsor End -->
+
+2. add this code code in both home.html and index.html (in navigation section which is after map section. Add this in between 'li' of about and event)
+
+    <li class="sec" id="spon">
+        <a href="#spon"><span class="line"></span><span class="ac_line"></span><span class="text">SPONSORS</span></a>
+    </li>

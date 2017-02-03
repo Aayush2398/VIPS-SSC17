@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Your Screen:</h3>
+
+<div id="demo"></div>
+
+<script>
+var winW = 630, winH = 460;
+if (document.body && document.body.offsetWidth) {
+ winW = document.body.offsetWidth;
+ winH = document.body.offsetHeight;
+}
+if (document.compatMode=='CSS1Compat' &&
+    document.documentElement &&
+    document.documentElement.offsetWidth ) {
+ winW = document.documentElement.offsetWidth;
+ winH = document.documentElement.offsetHeight;
+}
+if (window.innerWidth && window.innerHeight) {
+ winW = window.innerWidth;
+ winH = window.innerHeight;
+}
+var txt = "";
+txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";
+txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";
+txt += "<p>Color depth: " + screen.colorDepth + "</p>";
+txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
+txt += "<p>Current Width: " + winW + "</p>";
+txt += "<p>Current Height: " + winH + "</p>";
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>

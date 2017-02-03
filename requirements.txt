@@ -1,0 +1,17 @@
+cycler==0.10.0
+dj-database-url==0.4.1
+Django==1.10.3
+django-multiselectfield==0.1.4
+django-select-multiple-field==0.4.2
+gunicorn==19.6.0
+oauthlib==2.0.0
+psycopg2==2.6.2
+PyJWT==1.4.2
+python-openid==2.2.5
+python-social-auth==0.2.21
+requests==2.11.1
+requests-oauthlib==0.7.0
+six==1.10.0
+whitenoise==3.2.2
+sendgrid==3.6.3
+django-flat-responsive==1.2.0
